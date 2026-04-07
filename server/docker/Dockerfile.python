@@ -1,0 +1,8 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# No additional dependencies needed for basic execution
+# Users can extend this for their needs
+
+CMD ["python"]

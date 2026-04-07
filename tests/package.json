@@ -1,0 +1,17 @@
+{
+    "name": "synccode-tests",
+    "version": "1.0.0",
+    "description": "Performance validation tests for SyncCode",
+    "type": "module",
+    "scripts": {
+        "test:latency": "node test-latency.js",
+        "test:ot": "node test-ot-stress.js",
+        "test:execution": "node test-execution.js",
+        "test:connections": "node test-connections.js",
+        "test:all": "node test-latency.js && node test-ot-stress.js && node test-execution.js && node test-connections.js"
+    },
+    "dependencies": {
+        "socket.io-client": "^4.7.2",
+        "chalk": "^5.3.0"
+    }
+}

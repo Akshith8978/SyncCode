@@ -1,0 +1,22 @@
+# Deployment Configuration for AWS EC2
+
+This directory contains all configuration files needed to deploy SyncCode to AWS EC2 with Nginx reverse proxy.
+
+## Files
+
+- `nginx.conf` - Nginx reverse proxy configuration
+- `ecosystem.config.js` - PM2 process management configuration
+- `setup-ec2.sh` - Automated deployment script
+- `README.md` - Deployment guide
+
+## Quick Deploy
+
+```bash
+# On your EC2 instance
+chmod +x setup-ec2.sh
+./setup-ec2.sh
+```
+
+## Manual Deployment Steps
+
+See README.md for detailed instructions.
