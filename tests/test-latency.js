@@ -1,3 +1,4 @@
+import fs from 'fs';
 /**
  * Latency Test
  * 
@@ -173,7 +174,7 @@ class LatencyTest {
             passed: p95 < 100
         }
 
-        require('fs').writeFileSync(
+        fs.writeFileSync(
             'latency-results.json',
             JSON.stringify(results, null, 2)
         )
