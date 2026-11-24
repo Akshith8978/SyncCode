@@ -1,3 +1,4 @@
+import fs from 'fs';
 /**
  * Code Execution Performance Test
  * 
@@ -190,7 +191,7 @@ class ExecutionTest {
             passed: avgSeconds < 2
         }
 
-        require('fs').writeFileSync(
+        fs.writeFileSync(
             'execution-results.json',
             JSON.stringify(results, null, 2)
         )

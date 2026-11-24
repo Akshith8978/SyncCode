@@ -1,3 +1,4 @@
+import fs from 'fs';
 /**
  * Operational Transformation Stress Test
  * 
@@ -177,7 +178,7 @@ class OTStressTest {
                 passed: true
             }
 
-            require('fs').writeFileSync(
+            fs.writeFileSync(
                 'ot-stress-results.json',
                 JSON.stringify(results, null, 2)
             )
@@ -199,7 +200,7 @@ class OTStressTest {
                 uniqueStates: uniqueStates.slice(0, 3) // Sample
             }
 
-            require('fs').writeFileSync(
+            fs.writeFileSync(
                 'ot-stress-results.json',
                 JSON.stringify(results, null, 2)
             )

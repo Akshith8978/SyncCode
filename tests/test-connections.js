@@ -1,3 +1,4 @@
+import fs from 'fs';
 /**
  * WebSocket Connection Load Test
  * 
@@ -201,7 +202,7 @@ class ConnectionTest {
             passed: successful >= 100
         }
 
-        require('fs').writeFileSync(
+        fs.writeFileSync(
             'connection-results.json',
             JSON.stringify(results, null, 2)
         )
